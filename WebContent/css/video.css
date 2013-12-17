@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+.smallTittle{width: 100%;text-align: center;margin-top: 20px}
+.smallTittle a{color: #666666;}
+.smallTittle a:HOVER{color: #CA0000;cursor: pointer;text-decoration: underline;}
+/* index 页面 */
+.video{float: left;margin: 15px;height:110px;margin-bottom: 40px}
+.video image{height:76px;width: 124px}
+.video_div{margin-bottom: 5px}
+.video div:HOVER{cursor: pointer;border: red 2px solid;}
+.video p{margin-bottom: 5px;font-size: 12px}
+.video p.p1{text-align:left;color: #000000;}
+.video p.p1:HOVER{text-align: left;color: #CC0000;text-decoration: underline;cursor: pointer;}
+.video p.p2{}
+.video p.p3{color: #909090;}
+/* play 页面 */
+.bodyVideo{margin-left: 200px;margin-right: 200px;margin-top: 10px}
+.video_fir_h{background-image:url("pic/headVideo.jpg");height:35px;width: 100%;padding-top: 5px}
+.video_fir_h{}
+.videoPalyH2{margin-top: 10px;margin-bottom: 10px}
+.videoBodyLeft{float: left;width: 60%}
+.videoBodyRight{float:right;width: 35%}
+.videoPlay{height: 90px;width: 280px}
+.videoPlay:HOVER{cursor: pointer;height: 90px;width: 280px}
+.videoPlay p{color: #3399E0;margin-bottom: 10px}
+.videoImage{float: left;height:76px;width: 124px}
+.videoPage{float: right;}

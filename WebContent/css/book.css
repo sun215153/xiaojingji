@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.smallTittle{width: 100%;text-align: center;margin-top: 20px}
+.smallTittle a{color: #666666;}
+.smallTittle a:HOVER{color: #CA0000;cursor: pointer;text-decoration: underline;}
+
+.book{margin: 20px}
+.book image{width: 80px;height: 120px}
+.book div{float: left;margin-left: 10px;margin-bottom: 30px;height: 120px}
+.book_content{padding-top: 20px}
+.book_content p{margin-bottom:10px;color: #0360AF;font-size: 12px;height: 15%}
+table.tb_book  div{float: left;padding-left: 10px}
+table.tb_book{width: 100%}
+table.tb_book td{padding-bottom: 30px;padding-top: 10px}
