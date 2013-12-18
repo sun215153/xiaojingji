@@ -1,0 +1,55 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="healthdiagnosis" extends="gpms" namespace="">
+		<action name="healthdiagnosis" >
+			<result>/WEB-INF/views/healthconsult/healthdiagnosis.jsp</result>
+		</action>
+		
+		<action name="dataecg" >
+			<result>/WEB-INF/views/healthconsult/dataecg.jsp</result>
+		</action>
+		
+		<action name="datasugar" >
+			<result>/WEB-INF/views/healthconsult/datasugar.jsp</result>
+		</action>
+		
+		<action name="dataketone" >
+			<result>/WEB-INF/views/healthconsult/dataketone.jsp</result>
+		</action>
+		
+		<action name="dataoxygen" >
+			<result>/WEB-INF/views/healthconsult/dataoxygen.jsp</result>
+		</action>
+		
+		<action name="databloodpress" >
+			<result>/WEB-INF/views/healthconsult/databloodpress.jsp</result>
+		</action>
+		
+		<action name="databmi" >
+			<result>/WEB-INF/views/healthconsult/databmi.jsp</result>
+		</action>
+		
+	</package>
+</struts>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

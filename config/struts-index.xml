@@ -1,0 +1,52 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="index" extends="gpms">
+		
+		<!-- doctor start -->
+ 		<!-- show add page -->
+		<action name="showAddDoctor">
+			<result name="success">/WEB-INF/views/system/adddoctor.jsp</result>
+		</action>
+
+		<action name="showNewDetectByPersonId" class="indexAction" method="selectNewDetectByPersonId">
+			<result name="success">/WEB-INF/views/index.jsp</result>
+		</action>
+		
+		<action name="showBmiAction" class="indexAction" method="selectAllBmiByPersoninfoId">
+			<result name="success">/WEB-INF/views/home/bmilist.jsp</result>
+		</action>
+		
+		<action name="ketoneAction" class="indexAction" method="selectKetoneTopByPersonId">
+			<result name="success">/WEB-INF/views/system/managementuser.jsp</result>
+		</action>
+		
+		<!-- query the doctor -->
+		<action name="queryDoctorAction" class="doctorManageAction" method="queryDoctor">
+			<result name="success">/WEB-INF/views/system/managementuser.jsp</result>
+		</action>
+		<!-- doctor end -->
+		
+	</package>
+</struts>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

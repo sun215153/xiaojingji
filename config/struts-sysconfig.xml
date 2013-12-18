@@ -1,0 +1,121 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="sysconfig" extends="gpms">
+		
+		<!-- doctor start -->
+ 		<!-- show add page -->
+		<action name="showAddDoctor">
+			<result name="success">/WEB-INF/views/system/adddoctor.jsp</result>
+		</action>
+		<!-- add the doctor -->
+		<action name="savaDoctorAction" class="doctorManageAction" method="saveDoctor">
+			<result name="success">/WEB-INF/views/system/managementuser.jsp</result>
+		</action>
+		<!-- query the doctor -->
+		<action name="queryDoctorAction" class="doctorManageAction" method="queryDoctor">
+			<result name="success">/WEB-INF/views/system/managementuser.jsp</result>
+		</action>
+		<!-- doctor end -->
+		
+		<!-- show add person -->
+		<action name="showAddPersonAction">
+			<result name="success">/WEB-INF/views/system/addperson.jsp</result>
+		</action>
+		
+		
+		
+		<!-- show the success case  -->
+		<action name="showSuccessCase">
+			<result>/WEB-INF/views/system/admin.jsp</result>
+		</action>
+		<!--  -->
+		<action name="addSuccessCaseAction">
+			<result>/WEB-INF/views/system/addcase.jsp</result>
+		</action>
+		<!-- save the success case -->
+		<action name="successCaseAction" class="successCaseAction"
+			method="saveSussessCase">
+			<result name="success">admin.jsp</result>
+		</action>
+		
+		<!-- save the health knowledge -->
+		<action name="healthKnowledgeAction" class="successCaseAction"
+			method="saveHealthKnowledge">
+			<result name="success">/WEB-INF/views/system/healthknowledge.jsp</result>
+		</action>
+		
+		<!-- add health knowledge  -->
+		<action name="addHealthKnowledgeAction">
+			<result>/WEB-INF/views/system/addhealthknowledge.jsp</result>
+		</action>
+		<!-- select health knowledge -->
+		<action name="selectHealthKnowledgeAction" class="successCaseAction"
+			method="selectHealthKnowledge">
+			<result name="success">/WEB-INF/views/system/healthknowledge.jsp</result>
+		</action>
+		<!-- delete health knowledge -->
+		<action name="deleteHealthKnowledgeAction" class="successCaseAction"
+			method="deleteHealthKnowledge">
+			<result name="success">/WEB-INF/views/system/healthknowledge.jsp</result>
+		</action>
+		
+		
+		<!-- select system message -->
+		<action name="systemMessageAction" class="successCaseAction"
+			method="saveSystemMessage">
+			<result name="success">/WEB-INF/views/system/sysmessage.jsp</result>
+		</action>
+		<!-- add the system message  -->
+		<action name="addSystemMessageAction">
+			<result>/WEB-INF/views/system/addsystemmessage.jsp</result>
+		</action>
+		<!-- select system message -->
+		<action name="selectSystemMessageAction" class="successCaseAction"
+			method="selectSystemMessage">
+			<result name="success">/WEB-INF/views/system/sysmessage.jsp</result>
+		</action>
+		<!-- save system message -->
+		<action name="systemMessageAction" class="successCaseAction"
+			method="saveSystemMessage">
+			<result name="success">/WEB-INF/views/system/sysmessage.jsp</result>
+		</action>
+		
+		<!-- delete system message -->
+		<action name="deleteSystemMessageAction" class="successCaseAction"
+			method="deleteSystemMessage">
+			<result name="success">/WEB-INF/views/system/sysmessage.jsp</result>
+		</action>
+		
+		
+		
+		
+		<!-- 个人管理 -->
+		<!-- 个人添加页面 -->
+		<action name="addPersonAction">
+			<result>/WEB-INF/views/system/addperson.jsp</result>
+		</action>
+		
+	</package>
+</struts>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

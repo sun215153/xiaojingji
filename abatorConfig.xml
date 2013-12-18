@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN"
+  "http://ibatis.apache.org/dtd/abator-config_1_0.dtd">
+
+<abatorConfiguration>
+  <abatorContext>    <!-- TODO: Add Database Connection Information -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://127.0.0.1:3306/microecnomic"
+        userId="root"
+        password="123">
+      <classPathEntry location="F:\android_projects\MicroEcnomic\WebContent\WEB-INF\lib\mysql-connector-java-5.1.18.jar" />
+    </jdbcConnection>
+
+    <javaModelGenerator targetPackage="com.micro.web.entities" targetProject="MicroEcnomic" />
+    <sqlMapGenerator targetPackage="com.micro.web.entities.sqlmap" targetProject="MicroEcnomic" />
+    <daoGenerator type="spring" targetPackage="com.micro.web.dao" targetProject="MicroEcnomic" />
+
+    <table schema="ecnomic" tableName="videoComments"></table>
+	<table schema="ecnomic" tableName="essay"></table>
+	<table schema="ecnomic" tableName="essayComments"></table>
+	<table schema="ecnomic" tableName="user"></table>
+  </abatorContext>
+</abatorConfiguration>
