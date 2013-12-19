@@ -11,9 +11,6 @@ import com.micro.web.entities.User;
  */
 public interface UserService {
 	
-	/**
-	 * save the doctor data.
-	 * @param doctor
-	 */
-	public void saveDoctor(User user);
+
+	public void addUser(User user);
 }

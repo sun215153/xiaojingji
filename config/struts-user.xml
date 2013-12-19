@@ -1,0 +1,10 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="doc" extends="gpms">
+	    <action name="user_*" class="com.micro.web.action.UserAction" method="{1}">
+			<result>/WEB-INF/views/healthDoc/completedoc.jsp</result>
+		</action>
+	</package>
+</struts>

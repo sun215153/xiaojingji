@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2013/12/19 10:16:09                          */
+/* Created on:     2013/12/19 13:44:53                          */
 /*==============================================================*/
 
 
@@ -15,6 +15,7 @@ create table user
    username             varchar(30),
    password             varchar(30),
    email                varchar(200),
+   usertype             int,
    phone                varchar(20),
    insert_time          datetime,
    update_time          datetime,

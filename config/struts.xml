@@ -18,13 +18,13 @@
 	<constant name="struts.ui.theme" value="simple" />
 	
 	<!-- 包含其他模块配置文件 -->
-	<include file="struts-chronicdisease.xml" />
+<!-- 	<include file="struts-chronicdisease.xml" />
 	<include file="struts-registerandlogin.xml" />
 	<include file="struts-sysconfig.xml" />
 	<include file="struts-healthdDoc.xml"/>
 	<include file="struts-index.xml" />
-	<include file="struts-doctorreserve.xml" />
-	<include file="struts-healthdiagnosis.xml" />
+	<include file="struts-doctorreserve.xml" /> -->
+	<include file="struts-user.xml" />
 	<package name="gpms" extends="struts-default" namespace=""> 
 		<!-- <interceptors>
             <interceptor name="checkLoginInterceptor" class="com.garea.gpms.interceptor.DeaultSimpleInterceptor"/>

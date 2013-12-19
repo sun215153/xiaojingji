@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    
+  <description>JSTL 1.1 core library</description>
+  <display-name>JSTL core</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>g</short-name>
+  <uri>http://garea/web/tag</uri>
+  <tag>
+    <description>
+    	  对字符串进行截取
+    </description>
+    <name>substr</name>
+    <tag-class>com.garea.gpms.web.tag.SubString</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <description>
+			String
+        </description>
+        <name>value</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			起始字符所在字符串位置,默认为0
+        </description>
+        <name>beginIndex</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			结尾字符串所在位置，默认为字符串index，index从0开始
+        </description>
+        <name>endIndex</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+  
+   <tag>
+    <description>
+    	  对字符串进行截取
+    </description>
+    <name>WordBreak</name>
+    <tag-class>com.garea.gpms.web.tag.WordBreak</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <description>
+			String
+        </description>
+        <name>value</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			插入位置
+        </description>
+        <name>wordNumber</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+  <tag>
+    <description>
+    	 操作中状态提示
+    </description>
+    <name>message</name>
+    <tag-class>com.garea.gpms.web.tag.ResultMessageTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <description>
+			ResultMessage
+        </description>
+        <name>message</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+  
+   <tag>
+    <description>
+    	 去掉文字中的html标签
+    </description>
+    <name>deleteTag</name>
+    <tag-class>com.garea.gpms.web.tag.DeleteHtmlTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <description>
+			String
+        </description>
+        <name>value</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+      <attribute>
+        <description>
+			起始字符所在字符串位置,默认为0
+        </description>
+        <name>beginIndex</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			结尾字符串所在位置，默认为字符串index，index从0开始
+        </description>
+        <name>endIndex</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			确定是否需要对去掉标签后的文字进行截取
+        </description>
+        <name>subStrFlag</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			确定是否需要对标签去除，若为false则仅进行转义
+        </description>
+        <name>deleteTagFlag</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  </taglib>

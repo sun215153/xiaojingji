@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    
+  <description>JSTL 1.1 core library</description>
+  <display-name>JSTL core</display-name>
+  <tlib-version>1.1</tlib-version>
+  <short-name>c</short-name>
+  <uri>http://checkbox/checked</uri>
+  
+  <tag>
+    <description>
+    	  如果字符串大于三个以上则取前三个后面加上“...”
+    </description>
+    <name>checked</name>
+    <tag-class>com.garea.gpms.web.tag.ElementInArray</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <description>
+			String
+        </description>
+        <name>value</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+        <description>
+			String
+        </description>
+        <name>values</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <description>
+    	 将“：A：B：C”的字符串转为可显示的字符串
+    </description>
+    <name>show</name>
+    <tag-class>com.garea.gpms.web.tag.ShowArray</tag-class>
+    <body-content>scriptless</body-content>
+     <attribute>
+        <description>
+			String
+        </description>
+        <name>value</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+    <tag>
+	    <description>
+	    	从身份证中获取生日
+	    </description>
+	    <name>birthday</name>
+	    <tag-class>com.garea.gpms.web.tag.BirthdayFromIdcard</tag-class>
+	    <body-content>scriptless</body-content>
+	     <attribute>
+	        <description>
+				String
+	        </description>
+	        <name>value</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+   		 </attribute>
+  </tag>
+  
+   <tag>
+	    <description>
+	    	从身份证中获取生日
+	    </description>
+	    <name>age</name>
+	    <tag-class>com.garea.gpms.web.tag.AgeFromBirthday</tag-class>
+	    <body-content>scriptless</body-content>
+	     <attribute>
+	        <description>
+				String
+	        </description>
+	        <name>value</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+   		 </attribute>
+  </tag>
+  
+  </taglib>
