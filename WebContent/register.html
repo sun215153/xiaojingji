@@ -5,11 +5,15 @@
 <style type="text/css">
 .regcen{width: 1000px;margin-top:20px}
 .regcenhead{height: 70px}
-.regcontent{border-top: 1px solid silver;width: 1000px}
+.regcontent{border-top: 1px solid silver;width: 1000px;padding: }
 .regcontent input{height: 29px;width: 235px}
 .regcontent p{margin-bottom: 30px}
 .regcontent p:FIRST-CHILD {margin-top:40px}
 .regtlx{width: 84px}
+#agreement{margin-left: 90px}
+#agreement input{width: 20px;height:15px;padding-top: 20px}
+#agreement a{color: gray;font-size: 13px}
+#agreement span{color:gray;font-size: 13px}
 </style>
 <title>微经济</title>
 </head>
@@ -46,6 +50,13 @@
                     		<input type="password" size="30" name="cpassword" id="cpassword" class="inp inw" maxlength="16" onpaste="return false"  />
                   			  <span id="cpassword_Tip"></span> 
                			 </p>
+               			 
+               			 <p id="agreement">
+                    		<input type="checkbox" checked="checked" /> 
+                    		<span>我已阅读并同意</span>
+                    		<a target="_blank" href="http://about.xiaojingji.com/home/announcement.html">《本站使用协议》</a>
+                    		<span id="chkagreement_Tip"></span>
+                    	</p>
 					</div>
 				</form>
 			</div>
