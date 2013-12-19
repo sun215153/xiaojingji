@@ -1,32 +1,55 @@
-<html>  
-  <head>  
-    <title>jQuery实例1：浮动窗口</title>  
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-    <script type="text/javascript" src="jslib/jquery.js" src="jslib/jquery.js"></script>  
-    <script type="text/javascript" src="jslib/jquerywin.js" src="jslib/jquerywin.js"></script>  
-    <link type="text/css" rel="stylesheet" href="css/win.css" href="css/win.css">  
-  </head>  
-  <body>  
-  </body>  
-    <a onclick="showWin()" href="#" href="#">弹出窗口</a>  
-    <div id="win">  
-        <div id="title">我是标题栏！<span id="close" onclick="hide()">X</span></div>  
-        <div id="content">我是一个窗口！</div>  
-    </div>  
-</html>  
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-  <head>
-    <title>jQuery实例1：浮动窗口</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="jslib/jquery.js" src="jslib/jquery.js"></script>
-    <script type="text/javascript" src="jslib/jquerywin.js" src="jslib/jquerywin.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/win.css" href="css/win.css">
-  </head>
-  <body>
-  </body>
-    <a onclick="showWin()" href="#" >弹出窗口</a>
-    <div id="win">
-        <div id="title">我是标题栏！<span id="close" onclick="hide()">X</span></div>
-        <div id="content">我是一个窗口！</div>
-    </div>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+.regcen{width: 1000px;margin-top:20px}
+.regcenhead{height: 70px}
+.regcontent{border-top: 1px solid silver;width: 1000px}
+.regcontent input{height: 29px;width: 235px}
+.regcontent p{margin-bottom: 30px}
+.regcontent p:FIRST-CHILD {margin-top:40px}
+.regtlx{width: 84px}
+</style>
+<title>微经济</title>
+</head>
+<body>
+	<div align="center">
+		<div class="regcen">
+			<div  class="regcenhead">
+				<div style="float: left;"><img alt="" src="images/logo-49h.gif"></div>
+				<div style="float: left;border-left: 1px solid silver;margin-left: 20px;padding-left:20px;height: 30px;font-size: 20px;font-family: '微软雅黑';padding-top: 20px">用户注册</div>
+				<div style="float: right;padding-top: 40px;color: gray;font-size: 13px"><a >返回首页</a></div>
+			</div>
+			<div  class="regcontent">
+				<form action="">
+					<div align="left" style="margin-left: 60px">
+						<p>
+                    		<span class="regtlx">用&nbsp;&nbsp;户&nbsp;&nbsp;名&nbsp;</span>
+                       		<input type="text" size="20" value="" class="inp inw" id="nickName" maxlength="20" name="nickName"/>
+                       		<span id="nickName_Tip"></span> 
+                  		</p>
+                  		
+                  		 <p>
+	                    	<span class="regtlx">电&nbsp;子&nbsp;邮&nbsp;箱</span>
+	                        <input type="text" size="20" value="" class="inp inw" id="txtemail" name="txtemail" />
+	                        <span id="txtemail_Tip"></span> 
+                    	</p>
+                    	
+                    	 <p>
+                			<span class="regtlx">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;</span>
+                  			<input type="password" size="30" name="password" id="password" class="inp inw" onkeyup="$.c.user.reg.CheckPasswordStrength(this)" onpaste="return false" maxlength="16"  />
+                  			<span id="password_Tip" style="z-index: 100;"></span> 
+                		</p>
+              			  <p id="cpp">
+                			<span class="regtlx">确&nbsp;认&nbsp;密&nbsp;码</span>
+                    		<input type="password" size="30" name="cpassword" id="cpassword" class="inp inw" maxlength="16" onpaste="return false"  />
+                  			  <span id="cpassword_Tip"></span> 
+               			 </p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
