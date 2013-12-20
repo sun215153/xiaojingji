@@ -28,23 +28,23 @@
 				<div style="float: right;padding-top: 40px;color: gray;font-size: 13px"><a >返回首页</a></div>
 			</div>
 			<div  class="regcontent">
-				<form action="">
+				<form action="user_addUser">
 					<div align="left" style="margin-left: 60px">
 						<p>
                     		<span class="regtlx">用&nbsp;&nbsp;户&nbsp;&nbsp;名&nbsp;</span>
-                       		<input type="text" size="20" value="" class="inp inw" id="nickName" maxlength="20" name="nickName"/>
+                       		<input type="text" size="20" value="" class="inp inw" id="nickName" maxlength="20" name="user.username"/>
                        		<span id="nickName_Tip"></span> 
                   		</p>
                   		
                   		 <p>
 	                    	<span class="regtlx">电&nbsp;子&nbsp;邮&nbsp;箱</span>
-	                        <input type="text" size="20" value="" class="inp inw" id="txtemail" name="txtemail" />
+	                        <input type="text" size="20" value="" class="inp inw" id="txtemail" name="user.email" />
 	                        <span id="txtemail_Tip"></span> 
                     	</p>
                     	
                     	 <p>
                 			<span class="regtlx">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;</span>
-                  			<input type="password" size="30" name="password" id="password" class="inp inw" onkeyup="$.c.user.reg.CheckPasswordStrength(this)" onpaste="return false" maxlength="16"  />
+                  			<input type="password" size="30" name="user.password" id="password" class="inp inw" onkeyup="$.c.user.reg.CheckPasswordStrength(this)" onpaste="return false" maxlength="16"  />
                   			<span id="password_Tip" style="z-index: 100;"></span> 
                 		</p>
               			  <p id="cpp">
@@ -67,7 +67,7 @@
 				</form>
 			</div>
 		</div>
-		<div>
+		<div style="padding-top: 10px">
 			<a style="font-size: 12px;color:#616161;padding-top: 5px;cursor: pointer;">关于小经济</a>
 		</div>
 	</div>

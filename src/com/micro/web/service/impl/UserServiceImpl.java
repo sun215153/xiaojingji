@@ -1,5 +1,7 @@
 package com.micro.web.service.impl;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,8 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void addUser(User user) {
+		user.setInsertTime(new Date());
+		user.setUsertype(1);//默认为1，一般用户
 		userDAO.insert(user);
 	}
 	
