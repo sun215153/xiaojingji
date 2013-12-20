@@ -4,7 +4,7 @@
 <struts>
 	<package name="doc" extends="gpms">
 	    <action name="user_*" class="com.micro.web.action.UserAction" method="{1}">
-			<result>/WEB-INF/views/healthDoc/completedoc.jsp</result>
+			<result name="addUser">/WEB-INF/views/user/registerOver.jsp</result>
 		</action>
 	</package>
 </struts>

@@ -5,16 +5,11 @@
 
 package com.micro.web.action;
 
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
-import com.micro.web.dto.BaseResultDto;
-import com.micro.web.dto.DoctorSearchDto;
-import com.micro.web.entities.Doctor;
 import com.micro.web.entities.User;
-import com.micro.web.service.DoctorService;
 import com.micro.web.service.UserService;
 
 
@@ -35,7 +30,6 @@ public class UserAction extends BaseAction {
 	 public String  addUser() {
 		 userService.addUser(user);
 		 return "addUser";
-		
 	}
 
 
