@@ -32,6 +32,10 @@ public class UserAction extends BaseAction {
 		 return "addUser";
 	}
 
+	public String userRegister(){
+		
+		return "userRegister";
+	}
 
 	public User getUser() {
 		return user;

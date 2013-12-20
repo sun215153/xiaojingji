@@ -16,7 +16,7 @@
 		</span>
 		<span style="float: right;margin-right: 200px;color: white;">
 			 <a href="first.html">MicroEcnomic.com</a>|
-			 <a href="first.html">注册</a>|
+			 <a href="user_userRegister">注册</a>|
 			 <a href="first.html">登入</a>
 		</span>
 	</div>

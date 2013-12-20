@@ -12,7 +12,7 @@ $(function(){
 	setInterval(function(){
 		var total = parseInt($('#sy').html());
 		if (total == 0){
-			window.location.href = "index.html";
+			window.location.href = "index.jsp";
 		}else{
 			total = total -1;
 			$('#sy').html(total)
