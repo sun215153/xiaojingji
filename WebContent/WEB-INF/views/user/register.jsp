@@ -19,7 +19,7 @@
 #butt{margin-left: 90px}
 #butt:HOVER{cursor: pointer;}
 </style>
-<title>微经济</title>
+<title>小经济</title>
 </head>
 <body>
 	<div align="center">

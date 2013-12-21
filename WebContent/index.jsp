@@ -4,9 +4,10 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="css/general.css">
+<link href="xiao.ico" rel="SHORTCUT ICON">
 <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>微经济</title>
+<title>小经济</title>
 </head>
 <body>
 <!-- header -->
@@ -16,7 +17,7 @@
 		</span>
 		<span style="float: right;margin-right: 200px;color: white;">
 			 <a href="first.html">XiaoJingJi.com</a>|
-			 <a href="first.html">注册</a>|
+			  <a href="user_userRegister" target="_blank">注册</a>|
 			 <a href="first.html">登入</a>
 		</span>
 	</div>

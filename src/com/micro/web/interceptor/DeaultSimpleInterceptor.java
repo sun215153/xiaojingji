@@ -16,7 +16,7 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 @Controller 
 @Scope("prototype")
 public class DeaultSimpleInterceptor extends AbstractInterceptor {
-	private static HashMap<String, Boolean> map = new HashMap<>();
+	private static HashMap<String, Boolean> map = new HashMap<String, Boolean>();
 	static{
 		map.put("register", true);
 	}
