@@ -4,7 +4,7 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="css/general.css">
-<link href="xiao.ico" rel="SHORTCUT ICON">
+<link href="images/xiao.ico" rel="SHORTCUT ICON">
 <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>小经济</title>
