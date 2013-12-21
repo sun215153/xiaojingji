@@ -25,7 +25,7 @@
 	<div align="center">
 		<div class="regcen">
 			<div  class="regcenhead">
-				<div style="float: left;"><img alt="" src="images/logo-49h.gif"></div>
+				<div style="float: left;"><img alt="" src="images/logo3.png" style="width: 120pxpx;height: 45px"/></div>
 				<div style="float: left;border-left: 1px solid silver;margin-left: 20px;padding-left:20px;height: 30px;font-size: 20px;font-family: '微软雅黑';padding-top: 20px">用户注册</div>
 				<div style="float: right;padding-top: 40px;color: gray;font-size: 13px"><a >返回首页</a></div>
 			</div>
