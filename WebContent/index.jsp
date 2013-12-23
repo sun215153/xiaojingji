@@ -34,9 +34,9 @@
 	</div>
 	<div class="div_fir_f">
 		<span style="margin-left: 200px;">
-			<a href="index.html">首页</a>
+			<a href="http://127.0.0.1:8080">首页</a>
 			<a href="topic/topic_index.html">论坛</a>
-			<a href="book/book_index.html">书籍</a>
+			<a href="book_index">书籍</a>
 			<a href="video/video_index.html">视屏</a>
 			<a href="essay/essay_index.html">时文</a>
 			<a>强音</a>
