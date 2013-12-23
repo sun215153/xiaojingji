@@ -26,9 +26,10 @@
 	<include file="struts-doctorreserve.xml" /> -->
 	<include file="struts-user.xml" />
 	<include file="struts-book.xml" />
-	<package name="gpms" extends="struts-default" namespace=""> 
+	<include file="struts-essay.xml" />
+	<package name="xiaojingji" extends="struts-default" namespace=""> 
 		<!-- <interceptors>
-            <interceptor name="checkLoginInterceptor" class="com.garea.gpms.interceptor.DeaultSimpleInterceptor"/>
+            <interceptor name="checkLoginInterceptor" class="com.garea.xiaojingji.interceptor.DeaultSimpleInterceptor"/>
             <interceptor-stack name="teamwareStack">
                 <interceptor-ref name="defaultStack"/>
                 <interceptor-ref name="checkLoginInterceptor"/>

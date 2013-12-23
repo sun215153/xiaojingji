@@ -2,12 +2,12 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-	<package name="registerandlogin" extends="gpms">
+	<package name="registerandlogin" extends="xiaojingji">
 	    <action name="register">
 			<result>/WEB-INF/views/register.jsp</result>
 		</action>
 	    
- 		<action name="registerMessage" class="com.garea.gpms.web.action.RegisterMessageAction">
+ 		<action name="registerMessage" class="com.garea.xiaojingji.web.action.RegisterMessageAction">
 			<result name="success">/WEB-INF/views/login.jsp</result>
 		</action>
 		

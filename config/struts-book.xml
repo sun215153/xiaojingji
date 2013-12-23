@@ -2,7 +2,7 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-	<package name="book" extends="gpms">
+	<package name="book" extends="xiaojingji">
 	    <action name="book_*" class="com.micro.web.action.BookAction" method="{1}">
 			<result name="index">/WEB-INF/views/book/book_index.jsp</result>
 			<result name="userRegister">/WEB-INF/views/user/register.jsp</result>

@@ -2,42 +2,42 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-	<package name="doc" extends="gpms">
-	    <action name="personInfo" class="com.garea.gpms.web.action.DocAction" method="getPersonInfoById">
+	<package name="doc" extends="xiaojingji">
+	    <action name="personInfo" class="com.garea.xiaojingji.web.action.DocAction" method="getPersonInfoById">
 			<result>/WEB-INF/views/healthDoc/completedoc.jsp</result>
 		</action>
 		
-	     <action name="healthInfo" class="com.garea.gpms.web.action.DocAction" method="getHealthInfoById">
+	     <action name="healthInfo" class="com.garea.xiaojingji.web.action.DocAction" method="getHealthInfoById">
 			<result>/WEB-INF/views/healthDoc/healthinf.jsp</result>
 		</action>
-	     <action name="familyInfo" class="com.garea.gpms.web.action.DocAction" method="getFamilyInfoById">
+	     <action name="familyInfo" class="com.garea.xiaojingji.web.action.DocAction" method="getFamilyInfoById">
 			<result>/WEB-INF/views/healthDoc/familyhistory.jsp</result>
 		</action>
 		
-	     <action name="environmentInfo" class="com.garea.gpms.web.action.DocAction" method="getEnvironmentInfoById">
+	     <action name="environmentInfo" class="com.garea.xiaojingji.web.action.DocAction" method="getEnvironmentInfoById">
 			<result>/WEB-INF/views/healthDoc/environment.jsp</result>
 		</action>
 	    
-	    <action name="pastInfo" class="com.garea.gpms.web.action.DocAction" method="getPastInfoById">
+	    <action name="pastInfo" class="com.garea.xiaojingji.web.action.DocAction" method="getPastInfoById">
 			<result>/WEB-INF/views/healthDoc/pasthistory.jsp</result>
 		</action>
 	    
-		<action name="addPersonInfo" class="com.garea.gpms.web.action.DocAction" method="addPersonInfo">
+		<action name="addPersonInfo" class="com.garea.xiaojingji.web.action.DocAction" method="addPersonInfo">
 			<result name="success">/WEB-INF/views/healthDoc/viewfile.jsp</result>
 		</action>
 		
-		<action name="addHealthInfo" class="com.garea.gpms.web.action.DocAction" method="addHealthInfo">
+		<action name="addHealthInfo" class="com.garea.xiaojingji.web.action.DocAction" method="addHealthInfo">
 			<result name="success">/WEB-INF/views/healthDoc/viewfile.jsp</result>
 		</action>
-		<action name="addFamilyInfo" class="com.garea.gpms.web.action.DocAction" method="addFamilyInfo">
-			<result name="success">/WEB-INF/views/healthDoc/viewfile.jsp</result>
-		</action>
-		
-		<action name="addEnvironmentInfo" class="com.garea.gpms.web.action.DocAction" method="addEnvironmentInfo">
+		<action name="addFamilyInfo" class="com.garea.xiaojingji.web.action.DocAction" method="addFamilyInfo">
 			<result name="success">/WEB-INF/views/healthDoc/viewfile.jsp</result>
 		</action>
 		
-		<action name="addPastInfo" class="com.garea.gpms.web.action.DocAction" method="addPastInfo">
+		<action name="addEnvironmentInfo" class="com.garea.xiaojingji.web.action.DocAction" method="addEnvironmentInfo">
+			<result name="success">/WEB-INF/views/healthDoc/viewfile.jsp</result>
+		</action>
+		
+		<action name="addPastInfo" class="com.garea.xiaojingji.web.action.DocAction" method="addPastInfo">
 			<result>/WEB-INF/views/healthDoc/viewfile.jsp</result>
 		</action>
 	</package>

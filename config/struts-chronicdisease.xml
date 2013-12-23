@@ -2,7 +2,7 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-	<package name="chronicdisease" extends="gpms">
+	<package name="chronicdisease" extends="xiaojingji">
 	    <action name="chronicsugar">
 			<result>/WEB-INF/views/chronicdisease/doctor_diabetesmellituspatient.jsp</result>
 		</action>
@@ -23,15 +23,15 @@
 			<result>/WEB-INF/views/chronicdisease/doctoraddchronic.jsp</result>
 		</action>
 		
- 		<action name="diabetesmellitus" class="com.garea.gpms.web.action.DiabetesmellitusAction" method="showdata">
+ 		<action name="diabetesmellitus" class="com.garea.xiaojingji.web.action.DiabetesmellitusAction" method="showdata">
  		    <result name="success">/WEB-INF/views/chronicdisease/doctor_diabetesmellituspatient.jsp</result>
 		</action>
 		
- 		<action name="diabetesmellitusdelete" class="com.garea.gpms.web.action.DiabetesmellitusAction" method="deleteuser">
+ 		<action name="diabetesmellitusdelete" class="com.garea.xiaojingji.web.action.DiabetesmellitusAction" method="deleteuser">
 			<result name="success">/WEB-INF/views/chronicdisease/doctor_diabetesmellituspatient.jsp</result>
 		</action>
 		
- 		<action name="searchchronic" class="com.garea.gpms.web.action.SearchchronicAction" method="search">
+ 		<action name="searchchronic" class="com.garea.xiaojingji.web.action.SearchchronicAction" method="search">
  		    <result name="success">/WEB-INF/views/chronicdisease/doctor_diabetesmellituspatient.jsp</result>
  		    <result name="error">/WEB-INF/views/chronicdisease/doctor_diabetesmellituspatient.jsp</result>
  		</action>
