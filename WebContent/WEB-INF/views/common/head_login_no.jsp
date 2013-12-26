@@ -27,7 +27,7 @@
 			<a href="http://127.0.0.1:8080">首页</a>
 			<a href="topic/topic_index.html">论坛</a>
 			<a href="book_index">书籍</a>
-			<a href="video/video_index.html">视屏</a>
+			<a href="video_index">视屏</a>
 			<a href="essay_index">时文</a>
 			<a>强音</a>
 		</span>

@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="images/xiao.ico" rel="SHORTCUT ICON">
 <style type="text/css">
 .regcen{width: 1000px;margin-top:20px}
 .regcenhead{height: 70px}
@@ -18,8 +19,28 @@
 #agreement span{color:gray;font-size: 13px}
 #butt{margin-left: 90px}
 #butt:HOVER{cursor: pointer;}
+.tips{color: black;font-size: 12px}
 </style>
 <title>小经济</title>
+<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#nickName').blur(function(){
+			var len = $(this).val().length;
+			if(len <4 || len >=20){
+				$('#nickName_Tip').html("4-20位，可由汉字、数字、字母和“_”组成，注册成功后用户名不可修改");
+			}
+		}).focus(function(){$('#nickName_Tip').html("");});
+		
+		
+		$('#txtemail').blur(function(){
+			var lenMail = $(this).val().length;
+			if(lenMail <4 || lenMail >=20){
+				$('#txtemail_Tip').html("请输入有效的电子邮箱，可用于登录和找回密码");
+			}
+		}).focus(function(){$('#txtemail_Tip').html("");});
+	});
+</script>
 </head>
 <body>
 	<div align="center">
@@ -35,19 +56,19 @@
 						<p>
                     		<span class="regtlx">用&nbsp;&nbsp;户&nbsp;&nbsp;名&nbsp;</span>
                        		<input type="text" size="20" value="" class="inp inw" id="nickName" maxlength="20" name="user.username"/>
-                       		<span id="nickName_Tip"></span> 
+                       		<span id="nickName_Tip" class="tips"></span> 
                   		</p>
                   		
                   		 <p>
 	                    	<span class="regtlx">电&nbsp;子&nbsp;邮&nbsp;箱</span>
 	                        <input type="text" size="20" value="" class="inp inw" id="txtemail" name="user.email" />
-	                        <span id="txtemail_Tip"></span> 
+	                        <span id="txtemail_Tip" class="tips"></span> 
                     	</p>
                     	
                     	 <p>
                 			<span class="regtlx">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;</span>
                   			<input type="password" size="30" name="user.password" id="password" class="inp inw" onkeyup="$.c.user.reg.CheckPasswordStrength(this)" onpaste="return false" maxlength="16"  />
-                  			<span id="password_Tip" style="z-index: 100;"></span> 
+                  			<span id="password_Tip"  class="tips"></span> 
                 		</p>
               			  <p id="cpp">
                 			<span class="regtlx">确&nbsp;认&nbsp;密&nbsp;码</span>
