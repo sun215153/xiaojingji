@@ -3,7 +3,7 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="essay" extends="xiaojingji">
-	    <action name="essay_*" class="com.micro.web.action.BookAction" method="{1}">
+	    <action name="essay_*" class="com.micro.web.action.EssayAction" method="{1}">
 			<result name="index">/WEB-INF/views/essay/essay_index.jsp</result>
 		</action>
 	</package>

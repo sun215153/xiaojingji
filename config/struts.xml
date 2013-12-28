@@ -17,13 +17,6 @@
 	<constant name="struts.multipart.maxSize" value="20971520" />
 	<constant name="struts.ui.theme" value="simple" />
 	
-	<!-- 包含其他模块配置文件 -->
-<!-- 	<include file="struts-chronicdisease.xml" />
-	<include file="struts-registerandlogin.xml" />
-	<include file="struts-sysconfig.xml" />
-	<include file="struts-healthdDoc.xml"/>
-	<include file="struts-index.xml" />
-	<include file="struts-doctorreserve.xml" /> -->
 	<include file="struts-user.xml" />
 	<include file="struts-book.xml" />
 	<include file="struts-essay.xml" />
