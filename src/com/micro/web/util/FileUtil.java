@@ -526,9 +526,9 @@ public class FileUtil {
 	
 	
 	public static void main(String[] args) throws IOException{
-		File file =  new File("C:/Users/heqi\\Desktop\\11.jpg");
+		File file =  new File("C:/Users/heqi\\Desktop\\test.zip");
 		FileInputStream inputStream  = new FileInputStream(file);
-	    String str =uploadFile(inputStream,"11.jpg");
+	    String str =uploadFile(inputStream,"11.zip");
 	    
 	    System.out.println(str);
 	    
