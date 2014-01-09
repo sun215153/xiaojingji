@@ -1,4 +1,4 @@
-package com.micro.web.util;
+package com.micro.util;
 
 import java.awt.Image;
 import java.awt.image.BufferedImage;

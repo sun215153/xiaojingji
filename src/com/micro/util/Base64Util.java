@@ -3,7 +3,7 @@
 * Copyright 2012 Garea Microsystem Inc. All Rights Reserved.
 */
 
-package com.micro.web.util;
+package com.micro.util;
 
 import java.io.UnsupportedEncodingException;
 
