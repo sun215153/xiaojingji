@@ -9,8 +9,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.http.HttpRequest;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -39,7 +37,7 @@ public class UserAction extends BaseAction {
 	}
 
 	public String userRegister(){
-		
+		Cookie cookie = getCookieByName(getRequest(), "1234");
 		return "userRegister";
 	}
 
