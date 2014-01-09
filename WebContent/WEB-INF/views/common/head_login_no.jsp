@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+ <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!-- header -->
 	<div class="div_fir_h" >
 		<span style="color: white;margin-left: 200px;"> 
@@ -7,8 +8,9 @@
 		</span>
 		<span style="float: right;margin-right: 200px;color: white;">
 			 <a href="first.html">Xiaojingji.com</a>|
+			 <c:if test="${}"></c:if>
 			  <a href="user_userRegister" target="_blank">注册</a>|
-			 <a href="first.html">登入</a>
+			 <a href="user_login" target="_blank">登入</a>
 		</span>
 	</div>
 	<div class="div_fir_m">

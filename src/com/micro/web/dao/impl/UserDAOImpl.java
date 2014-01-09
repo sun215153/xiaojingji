@@ -767,4 +767,13 @@ public class UserDAOImpl extends BaseDao implements UserDAO {
         parms.putAll(getupdate_timeExampleParms(example));
         return parms;
     }
+
+	@Override
+	public User selectByUserName(String username, String password) {
+		User key = new User();
+		key.setUsername(username);
+		key.setPassword(password);
+		User record = (User) getSqlMapClientTemplate().queryForObject("user.selectByUserName", key);
+		return record;
+	}
 }

@@ -5,9 +5,12 @@
 
 package com.micro.web.action;
 
+import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.struts2.ServletActionContext;
 
@@ -43,23 +46,47 @@ public class BaseAction extends ActionSupport {
 		return (HttpServletRequest)ActionContext.getContext().get(ServletActionContext.HTTP_REQUEST);
 	}
 	
-	protected HttpServletRequest getResponse(){
-		return (HttpServletRequest)ActionContext.getContext().get(ServletActionContext.HTTP_RESPONSE);
+	protected HttpServletResponse getResponse(){
+		return (HttpServletResponse)ActionContext.getContext().get(ServletActionContext.HTTP_RESPONSE);
 	}
 	
-	protected SessionInfo getSessionInfo(){
-		SessionInfo sessionInfo = (SessionInfo)this.getSession().get(Constants.SESSION_INFO);
-		if (sessionInfo == null){
-			sessionInfo = new SessionInfo();
-			sessionInfo.setUserType(2); // dev 假设用户是管理员
-			sessionInfo.setUserId(1L);
-			sessionInfo.setLoginName("sysadmin");
-			ActionContext.getContext().getSession().put(Constants.SESSION_INFO, sessionInfo);
-		}
-		return (SessionInfo)this.getSession().get(Constants.SESSION_INFO);
-	}
 	
 	protected int getPageNo(){
 		return FormatUtil.parseInt(this.getRequest().getParameter(PAGE_NO));
+	}
+	
+	
+	/**
+	 * 根据名字获取cookie
+	 * @param request
+	 * @param name cookie名字
+	 * @return cookie,if find nothing ,return null
+	 */
+	protected Cookie getCookieByName(HttpServletRequest request,String name) {
+		 Map<String,Cookie> cookieMap = ReadCookieMap(request);
+		    if(cookieMap.containsKey(name)){
+		        Cookie cookie = (Cookie)cookieMap.get(name);
+		        return cookie;
+		    }else{
+		        return null;
+		    }   
+	}
+	 
+	 
+	 
+	/**
+	 * 将cookie封装到Map里面
+	 * @param request
+	 * @return
+	 */
+	private static Map<String,Cookie> ReadCookieMap(HttpServletRequest request){  
+	    Map<String,Cookie> cookieMap = new HashMap<String,Cookie>();
+	    Cookie[] cookies = request.getCookies();
+	    if(null!=cookies){
+	        for(Cookie cookie : cookies){
+	            cookieMap.put(cookie.getName(), cookie);
+	        }
+	    }
+	    return cookieMap;
 	}
 }

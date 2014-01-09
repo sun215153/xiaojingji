@@ -2,6 +2,7 @@ package com.micro.web.dao;
 
 import com.micro.web.entities.User;
 import com.micro.web.entities.UserExample;
+
 import java.util.List;
 
 public interface UserDAO {
@@ -53,4 +54,6 @@ public interface UserDAO {
      * @abatorgenerated  Fri Dec 20 11:10:55 CST 2013
      */
     int deleteByPrimaryKey(Long userid);
+
+	User selectByUserName(String username, String password);
 }

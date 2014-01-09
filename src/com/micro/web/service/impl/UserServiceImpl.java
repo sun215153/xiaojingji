@@ -20,5 +20,11 @@ public class UserServiceImpl implements UserService {
 		user.setUsertype(1);//默认为1，一般用户
 		userDAO.insert(user);
 	}
+
+	@Override
+	public User findUser(User user) {
+		user = userDAO.selectByUserName(user.getUsername(),user.getPassword());
+		return user;
+	}
 	
 }

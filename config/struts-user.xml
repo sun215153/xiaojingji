@@ -6,6 +6,8 @@
 	    <action name="user_*" class="com.micro.web.action.UserAction" method="{1}">
 			<result name="addUser">/WEB-INF/views/user/registerOver.jsp</result>
 			<result name="userRegister">/WEB-INF/views/user/register.jsp</result>
+			<result name="login">/WEB-INF/views/user/login.jsp</result>
+			<result name="userLogin" type="redirect">/</result>
 		</action>
 	</package>
 </struts>
