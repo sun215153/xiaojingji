@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- header -->
-	<%@include file="../common/head_login_no.jsp" %>
+	<%@include file="../common/head.jsp" %>
 	<!-- body -->
 	
 	<div class="body">

@@ -9,7 +9,7 @@
 <title>小经济</title>
 </head>
 <body>
-	<%@include file="../common/head_login_no.jsp" %>
+	<%@include file="../common/head.jsp" %>
 	<!-- body -->
 	<div class="body">
 		<h2>您所在的位置：首页&gt;论坛&gt;正文</h2>

@@ -10,7 +10,7 @@
 <title>小经济</title>
 </head>
 <body>
-	<%@include file="../common/head_login_no.jsp" %>
+	<%@include file="../common/head.jsp" %>
 	<!-- body -->
 	
 	<div class="body">
