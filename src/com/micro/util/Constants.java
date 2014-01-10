@@ -12,6 +12,8 @@ package com.micro.util;
  */
 public class Constants {
 	
+	public static final String COOKIE_NAME = "usermessage";
+	
 	public static final String SESSION_INFO = "sessionInfo";
 	
 	public static final String USER_TYPE = "userType";

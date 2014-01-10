@@ -23,7 +23,7 @@
 			<span style="float: right;margin-right: 200px;color: white;">
 				 <a href="first.html">Xiaojingji.com</a>|
 				  <a href="user_userRegister" target="_blank">个人中心</a>|
-				 <a href="user_login" target="_blank">登出</a>
+				 <a href="user_loginOut" target="_blank">登出</a>
 			</span>
 		 </c:if>
 	</div>
