@@ -3,15 +3,29 @@
  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!-- header -->
 	<div class="div_fir_h" >
-		<span style="color: white;margin-left: 200px;"> 
-			<font color="white">你好，欢迎登入!</font> 
-		</span>
-		<span style="float: right;margin-right: 200px;color: white;">
-			 <a href="first.html">Xiaojingji.com</a>|
-			 <c:if test="${}"></c:if>
-			  <a href="user_userRegister" target="_blank">注册</a>|
-			 <a href="user_login" target="_blank">登入</a>
-		</span>
+		<c:if test="${empty usermessage.user}">
+			<span style="color: white;margin-left: 200px;"> 
+				<font color="white">你好，欢迎登入!</font> 
+			</span>
+			<span style="float: right;margin-right: 200px;color: white;">
+				 <a href="first.html">Xiaojingji.com</a>|
+				 
+				  <a href="user_userRegister" target="_blank">注册</a>|
+				 <a href="user_login" target="_blank">登入</a>
+				
+			</span>
+		 </c:if>
+		 
+		 <c:if test="${not empty usermessage.user}">
+			<span style="color: white;margin-left: 200px;"> 
+				<font color="white">你好，${usermessage.user.username}!</font> 
+			</span>
+			<span style="float: right;margin-right: 200px;color: white;">
+				 <a href="first.html">Xiaojingji.com</a>|
+				  <a href="user_userRegister" target="_blank">个人中心</a>|
+				 <a href="user_login" target="_blank">登出</a>
+			</span>
+		 </c:if>
 	</div>
 	<div class="div_fir_m">
 		<span style="margin-left: 200px;">

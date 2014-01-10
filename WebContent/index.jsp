@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,14 +13,29 @@
 <body>
 <!-- header -->
 	<div class="div_fir_h" >
-		<span style="color: white;margin-left: 200px;"> 
-			<font color="white">你好，欢迎登入!</font> 
-		</span>
-		<span style="float: right;margin-right: 200px;color: white;">
-			 <a href="first.html">Xiaojingji.com</a>|
-			  <a href="user_userRegister" target="_blank">注册</a>|
-			 <a href="user_login" target="_blank">登入</a>
-		</span>
+		<c:if test="${empty usermessage.user}">
+			<span style="color: white;margin-left: 200px;"> 
+				<font color="white">你好，欢迎登入!</font> 
+			</span>
+			<span style="float: right;margin-right: 200px;color: white;">
+				 <a href="first.html">Xiaojingji.com</a>|
+				 
+				  <a href="user_userRegister" target="_blank">注册</a>|
+				 <a href="user_login" target="_blank">登入</a>
+				
+			</span>
+		 </c:if>
+		 
+		 <c:if test="${not empty usermessage.user}">
+			<span style="color: white;margin-left: 200px;"> 
+				<font color="white">你好，${usermessage.user.username}!</font> 
+			</span>
+			<span style="float: right;margin-right: 200px;color: white;">
+				 <a href="first.html">Xiaojingji.com</a>|
+				  <a href="user_userRegister" target="_blank">个人中心</a>|
+				 <a href="user_login" target="_blank">登出</a>
+			</span>
+		 </c:if>
 	</div>
 	<div class="div_fir_m">
 		<span style="margin-left: 200px;">

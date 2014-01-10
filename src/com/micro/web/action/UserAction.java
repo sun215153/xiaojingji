@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import com.micro.bean.UserMessage;
 import com.micro.web.entities.User;
 import com.micro.web.service.UserService;
 
@@ -27,6 +28,7 @@ public class UserAction extends BaseAction {
 	
 	private User user;
 
+	private int cookieTime = 1*24* 60* 60*1000;
 	@Autowired
 	private UserService userService;
 	
@@ -56,14 +58,16 @@ public class UserAction extends BaseAction {
 				
 			}
 			if(user.getUsertype() == 1){
-				Cookie cookie =  getCookieByName(request, user.getUsername());
-				if(cookie == null){
-					cookie = new Cookie(user.getUsername(),user.getUserid().toString());
-					cookie.setMaxAge(360000);
+				// cookie =  getCookieByName(request, user.getUsername());
+				UserMessage userMessage = (UserMessage) getRequest().getAttribute("usermessage");
+				if(userMessage.getUser() == null){
+					JSONObject jsonObject = new JSONObject(user);
+					Cookie	cookie = new Cookie("usermessage",jsonObject.toString());
+					cookie.setMaxAge(cookieTime);
 					//设置路径，这个路径即该工程下都可以访问该cookie 如果不设置路径，那么只有设置该cookie路径及其子路径可以访问
 					cookie.setPath("/");
+					response.addCookie(cookie);
 				}
-				response.addCookie(cookie);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
